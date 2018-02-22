@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries List", "Countries List\Countries List.csproj", "{E1C9CA18-D8F9-443D-BB0E-2AD005765D53}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CountryPro", "CountryPro", "{DEE2E2C9-EF09-4E11-A74F-33CB3EF6960E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Country", "Country", "{DEE2E2C9-EF09-4E11-A74F-33CB3EF6960E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryDAL", "CountryDAL\CountryDAL.csproj", "{10E7114B-30DD-4824-B67A-493EE6BD3671}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryBLO", "CountryBLO\CountryBLO.csproj", "{7AE5538C-8004-49D5-AD29-44CC4E1777AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Continents", "Continents", "{BB52235B-D343-4EEC-B3AB-1800B5C41B34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContinentsDAL", "ContinentsDAL\ContinentsDAL.csproj", "{595239A7-DF0A-43E3-BCF8-9351949A182E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContinentsBLO", "ContinentsBLO\ContinentsBLO.csproj", "{5281C4C1-68BF-4B58-8208-2F802C9B13EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E1C9CA18-D8F9-443D-BB0E-2AD005765D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1C9CA18-D8F9-443D-BB0E-2AD005765D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1C9CA18-D8F9-443D-BB0E-2AD005765D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1C9CA18-D8F9-443D-BB0E-2AD005765D53}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10E7114B-30DD-4824-B67A-493EE6BD3671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10E7114B-30DD-4824-B67A-493EE6BD3671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10E7114B-30DD-4824-B67A-493EE6BD3671}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,6 +29,14 @@ Global
 		{7AE5538C-8004-49D5-AD29-44CC4E1777AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AE5538C-8004-49D5-AD29-44CC4E1777AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AE5538C-8004-49D5-AD29-44CC4E1777AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595239A7-DF0A-43E3-BCF8-9351949A182E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595239A7-DF0A-43E3-BCF8-9351949A182E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595239A7-DF0A-43E3-BCF8-9351949A182E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595239A7-DF0A-43E3-BCF8-9351949A182E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5281C4C1-68BF-4B58-8208-2F802C9B13EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5281C4C1-68BF-4B58-8208-2F802C9B13EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5281C4C1-68BF-4B58-8208-2F802C9B13EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5281C4C1-68BF-4B58-8208-2F802C9B13EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{10E7114B-30DD-4824-B67A-493EE6BD3671} = {DEE2E2C9-EF09-4E11-A74F-33CB3EF6960E}
 		{7AE5538C-8004-49D5-AD29-44CC4E1777AA} = {DEE2E2C9-EF09-4E11-A74F-33CB3EF6960E}
+		{595239A7-DF0A-43E3-BCF8-9351949A182E} = {BB52235B-D343-4EEC-B3AB-1800B5C41B34}
+		{5281C4C1-68BF-4B58-8208-2F802C9B13EF} = {BB52235B-D343-4EEC-B3AB-1800B5C41B34}
 	EndGlobalSection
 EndGlobal
