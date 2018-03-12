@@ -40,10 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Cotinent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Models\" />
+    <ProjectReference Include="..\ContinentsDAL\ContinentsDAL.csproj">
+      <Project>{595239a7-df0a-43e3-bcf8-9351949a182e}</Project>
+      <Name>ContinentsDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CountryBLO\CountryBLO.csproj">
+      <Project>{7ae5538c-8004-49d5-ad29-44cc4e1777aa}</Project>
+      <Name>CountryBLO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
