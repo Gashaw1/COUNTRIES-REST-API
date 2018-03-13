@@ -14,4 +14,6 @@ namespace ContinentsBLO.Models
         public int CotinentPopulation { get; set; }
         public List<Country> countries { get; set; }
     }
+
+
 }
