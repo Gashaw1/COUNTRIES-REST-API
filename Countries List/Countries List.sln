@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContinentsDAL", "Continents
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContinentsBLO", "ContinentsBLO\ContinentsBLO.csproj", "{5281C4C1-68BF-4B58-8208-2F802C9B13EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countary_API", "Countary_API\Countary_API.csproj", "{9EC3873D-ACBE-4259-B241-341C50B4B244}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{5281C4C1-68BF-4B58-8208-2F802C9B13EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5281C4C1-68BF-4B58-8208-2F802C9B13EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5281C4C1-68BF-4B58-8208-2F802C9B13EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EC3873D-ACBE-4259-B241-341C50B4B244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC3873D-ACBE-4259-B241-341C50B4B244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC3873D-ACBE-4259-B241-341C50B4B244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC3873D-ACBE-4259-B241-341C50B4B244}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

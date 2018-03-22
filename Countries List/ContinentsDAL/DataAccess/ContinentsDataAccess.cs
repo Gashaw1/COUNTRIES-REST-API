@@ -1,22 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ContinentsDAL.DataAccess
 {
-    class ContinentsDataAccess
+    public class ContinentsDataAccess
     {
+        private string cs = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
 
         //return all continents
         public DataSet ReturnContinent()
         {
             var dataSet = new DataSet();
-            using (var con = new SqlConnection(""))
+            using (var con = new SqlConnection(cs))
             {
+                con.Open();
                 var command = new SqlCommand("SP_ReturnContent", con);
                 command.CommandType = CommandType.StoredProcedure;
 
@@ -32,9 +30,9 @@ namespace ContinentsDAL.DataAccess
         public DataSet ReturnContinent(string continentID)
         {
             var dataSet = new DataSet();
-            using (var con = new SqlConnection(""))
+            using (var con = new SqlConnection(cs))
             {
-                var command = new SqlCommand("SP_ReturnContent", con);
+                var command = new SqlCommand("SP_ReturnContentByID", con);
 
                 var paramContinentID = new SqlParameter("@continentID", continentID);
                 command.Parameters.Add(paramContinentID);

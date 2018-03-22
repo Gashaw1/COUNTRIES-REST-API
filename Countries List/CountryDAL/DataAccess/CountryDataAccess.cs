@@ -7,7 +7,7 @@ namespace CountryDAL.DataAccess
     public class CountryDataAccess
     {
 
-        private string cs = ConfigurationManager.ConnectionStrings[""].ConnectionString;
+        private string cs = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
 
         //return all country
         DataSet dataset { get; set; }
@@ -18,7 +18,7 @@ namespace CountryDAL.DataAccess
             using (SqlConnection con = new SqlConnection(cs))
             {
 
-                SqlCommand cmd = new SqlCommand("", con);
+                SqlCommand cmd = new SqlCommand("Sp_ReturnCountary", con);
 
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -31,17 +31,17 @@ namespace CountryDAL.DataAccess
 
         }
         //return country by id
-        public DataSet returnCountry(int id)
+        public DataSet returnCountry(string countryID)
         {
 
             dataset = new DataSet();
             using (SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("", con);
+                SqlCommand cmd = new SqlCommand("Sp_ReturnCountaryById", con);
 
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter param = new SqlParameter("", id);  
+                SqlParameter param = new SqlParameter("@countryID", countryID);  
                 cmd.Parameters.Add(param);               
 
                 SqlDataAdapter dataadapter = new SqlDataAdapter(cmd);
