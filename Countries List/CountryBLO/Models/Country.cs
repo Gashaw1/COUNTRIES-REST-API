@@ -32,6 +32,7 @@ namespace CountryBLO.Models
                 countary.countryID = row["countryID"].ToString();
                 countary.countryName = row["countryName"].ToString();
                 countary.countryCapital = row["countryCapital"].ToString();
+                countary.continentID = row["cotinentID"].ToString();
                 countary.countryPopulation = Convert.ToInt32(row["countryPopulation"]);
                 countries.Add(countary);
             }

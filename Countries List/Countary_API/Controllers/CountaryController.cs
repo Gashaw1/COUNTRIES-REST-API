@@ -15,5 +15,6 @@ namespace Countary_API.Controllers
             var result = Cotinent.continteniesRturn();
             return ControllerContext.Request.CreateResponse(HttpStatusCode.OK, new { result });
         }
+        
     }
 }
